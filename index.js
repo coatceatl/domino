@@ -2,11 +2,15 @@
 //document.querySelectorAll('.dot').display = 'none';
 
 document.querySelector('.reset').addEventListener('click', function() {
-  const dice = Math.floor(Math.random() * 6) + 1;
+  const top = Math.floor(Math.random() * 7);
+  const bottom = Math.floor(Math.random() * 7);
 
-  const displayDiceTop = document.querySelector('.top');
-  const displayDiceBottom = document.querySelector('.bottom');
+  const displayDiceTop = document.querySelector('.top-box');
+  const displayDiceBottom = document.querySelector('.bottom-box');
   displayDiceTop.style.display = 'block';
   displayDiceBottom.style.display = 'block';
-  console.log(dice);
+  displayDiceTop.textContent = top;
+  displayDiceBottom.textContent = bottom;
+  console.log(top);
+  console.log(bottom);
 });
