@@ -1,9 +1,12 @@
 //document.querySelector('.top-box').textContent = dice;
-document.querySelector('.dot').style.display = 'none';
+//document.querySelectorAll('.dot').display = 'none';
 
 document.querySelector('.reset').addEventListener('click', function() {
   const dice = Math.floor(Math.random() * 6) + 1;
 
-  const displayDice = document.querySelector('.dot');
-  displayDice.style.display = 'block';
+  const displayDiceTop = document.querySelector('.top');
+  const displayDiceBottom = document.querySelector('.bottom');
+  displayDiceTop.style.display = 'block';
+  displayDiceBottom.style.display = 'block';
+  console.log(dice);
 });
