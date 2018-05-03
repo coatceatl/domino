@@ -14,6 +14,12 @@
       width: 100px;
       height: 100px;
      }
+   .dot {
+     width: 10px;
+       height: 10px;
+         border-radius: 50%;
+           background-color: black;
+   }
 
     </style>
   </head>
@@ -24,12 +30,14 @@
     <main>
     <div class='content'>
       <div class='play panel'>
-        <div class='top-box'></div>
+        <div class='top-box'>
+          <div class='dot'></div>
+        </div>
         <div class='bottom-box'></div>
       </div>
       <div class='options'>
         <button>Rotate left</button>
-        <button>Reset</button>
+        <button class='reset'>Reset</button>
         <button>Rotate right</button>
       </div>
     </div>
