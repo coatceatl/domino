@@ -1,9 +1,26 @@
+header {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60vh;
+}
+
 .play-panel {
   width: 100px;
+  margin: auto;
   border: 1px solid black;
+  border-radius: 15px;
 
   .top-box, .bottom-box {
     box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100px;
     height: 100px;
   }
